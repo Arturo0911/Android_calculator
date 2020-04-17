@@ -1,0 +1,17 @@
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\bin\Release\netstandard2.0\calculator.deps.json
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\bin\Release\netstandard2.0\calculator.dll
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\bin\Release\netstandard2.0\ref\calculator.dll
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\bin\Release\netstandard2.0\calculator.pdb
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\Information.xaml.g.cs
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\Process.xaml.g.cs
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\calculator.AssemblyInfoInputs.cache
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\calculator.AssemblyInfo.cs
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\calculator.dll
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\ref\calculator.dll
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\calculator.pdb
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\Presentation.xaml.g.cs
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\Test.xaml.g.cs
+C:\Users\Arturin\Desktop\App Csharp\calculator\calculator\obj\Release\netstandard2.0\calculator.csprojAssemblyReference.cache

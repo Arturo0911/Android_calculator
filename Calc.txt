@@ -1,0 +1,3 @@
+ MainPage = new NavigationPage(new PrincipalPage());
+
+((NavigationPage)this.Parent).PushAsync(new UsuariosPrincipalPage());                                                                                                                                                                                

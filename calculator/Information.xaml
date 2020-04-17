@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="calculator.Information">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,35,10,10">
+
+                
+
+                <Frame
+                    
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+                        <Label 
+                            Text=" 1 Nivel de materia orgánica."
+                            FontSize="Medium"
+                            FontAttributes="Bold"/>
+                        <BoxView Color="Gray"
+                                 HeightRequest="2"
+                                 HorizontalOptions="Fill"/>
+                        <Label Text="La cantidad de materia orgánica que hay en el suelo es importante para el crecimieno de las plantas."/>
+                        <Label Text="Los valores varían dependiendo de la cantidad de macro y micronutrientes, escoge un valor previo al analisis que se haya hecho del 0 al 5"/>
+    
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+                        <Label 
+                            Text=" 2 Zona del cultivo."
+                            FontSize="Medium"
+                            FontAttributes="Bold"/>
+                        <BoxView Color="Gray"
+                                 HeightRequest="2"
+                                 HorizontalOptions="Fill"/>
+                        <Label Text="Ubicacion en donde se encuentra la parcela del cultivo. Saber donde se encuentra la ubicación del cultivo es importante para saber las condiciones de temperatura que estas tendrán "/>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+                        <Label 
+                            Text="3 Factores limitantes."
+                            FontSize="Medium"
+                            FontAttributes="Bold"/>
+                        <BoxView Color="Gray"
+                                 HeightRequest="2"
+                                 HorizontalOptions="Fill"/>
+                        <Label Text="Ahora tenemos que conocer la fertilidad de tu suelo. indique si los niveles de fosforo y potasio que tiene tu tierra son altos o bajos. "/>
+
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label
+                                Text=""/>
+                            <Label
+                                Grid.Column="1"
+                                Text=""/>
+                            <Button    
+                                IsEnabled="False"
+                                BackgroundColor="Transparent"
+                                Text="Nivel de Fósforo"
+                                ImageSource="fosforo.png"
+                                FontAttributes="Bold"
+                                Grid.Row="1"/>
+                            <Button    
+                                IsEnabled="False"
+                                BackgroundColor="Transparent"
+                                ImageSource="potasio.png"
+                                Text="Nivel de Potasio"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                FontAttributes="Bold"/>
+
+                            
+                        </Grid>
+                        
+                    </StackLayout>
+
+                </Frame>
+                <Frame
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+                        <Label 
+                            Text="4 Producción esperada."
+                            FontSize="Medium"
+                            FontAttributes="Bold"/>
+                        <BoxView Color="Gray"
+                                 HeightRequest="2"
+                                 HorizontalOptions="Fill"/>
+                        <Label Text="Introduce ahora, cuántos kilos por hectárea tienes previsto obtener.(ejemplo: 1000 Kg/ha)."/>
+
+
+                        
+                    </StackLayout>
+
+                </Frame>
+
+                
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+ 
+</ContentPage>

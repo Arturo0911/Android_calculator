@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="calculator.Process"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,35,10,10">
+
+                               
+                <Frame
+                    
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+                        
+                        <BoxView Color="Gray"
+                                 HeightRequest="2"
+                                 HorizontalOptions="Fill"/>
+                        
+
+                        <Entry
+                            x:Name="ValOrganico"
+                            Placeholder="Nivel de materia orgánica"
+                            
+                            />
+                        <Button
+                            x:Name="BtnElegirCultivo"
+                            Padding="10"
+                            Margin="10"
+                            Text="VALORES ORGÁNICOS"
+                            Clicked="BtnElegirCultivo_Clicked"/>
+
+                        
+
+                    </StackLayout>
+
+                </Frame>
+
+                
+
+                <Frame
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+                        
+                        <BoxView Color="Gray"
+                                 HeightRequest="2"
+                                 HorizontalOptions="Fill"/>
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Button    
+                                IsEnabled="False"
+                                BackgroundColor="Transparent"
+                                Text="Nivel de Fósforo"
+                                ImageSource="fosforo.png"
+                                FontAttributes="Bold"
+                                />
+                            <Button    
+                                IsEnabled="False"
+                                BackgroundColor="Transparent"
+                                ImageSource="potasio.png"
+                                Text="Nivel de Potasio"
+                                
+                                Grid.Column="1"
+                                FontAttributes="Bold"/>
+
+                            <Button     
+                                
+                                x:Name="BtnAltoFosforo"
+                                Text="Alto"
+                                Grid.Row="1"
+                                Clicked="BtnAltoFosforo_Clicked"/>
+                            <!-- Botón del fosforo-->
+
+                            <Button
+                                x:Name="BtnAltoPotasio"
+                                Text="Alto"
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                Clicked ="BtnAltoPotasio_Clicked"/>
+                            <!-- Botón del potasio-->
+                            
+                            
+                            <Button
+                                x:Name="BtnBajoFosforo"
+                                Text="Bajo"
+                                Grid.Row="3"
+                                Clicked="BtnBajoFosforo_Clicked"/>
+                            
+                            <Button
+                                x:Name="BtnBajoPotasio"
+                                Text="Bajo"
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                Clicked="BtnBajoPotasio_Clicked"/>
+                        </Grid>
+                        <Button
+                            x:Name="BtnRefresh"
+                            Text="Refresh"
+                            Clicked="BtnRefresh_Clicked"/>
+
+                    </StackLayout>
+
+                </Frame>
+                <Frame
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+                        
+                        <BoxView Color="Gray"
+                                 HeightRequest="2"
+                                 HorizontalOptions="Fill"/>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Entry
+                                x:Name="CantidadEsperada"
+                                Placeholder="extension del cultivo"
+                                FontAttributes="Italic"
+                                />
+                            <Button
+                                x:Name="BtnCantidadEsperada"
+                                Grid.Column="1"
+                            
+                                Padding="10"
+                                Margin="10"
+                                Text="dimension Pies"
+                                Clicked="BtnCantidadEsperada_Clicked"/>
+                        </Grid>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+                        <Label 
+                            Text="Calculo."
+                            FontSize="Medium"
+                            FontAttributes="Bold"/>
+                        <BoxView Color="Gray"
+                                 HeightRequest="2"
+                                 HorizontalOptions="Fill"/>
+                        <Label Text="¿ Estás deacuerdo con la información ingresada ?. Pulsa Ok para continuar con el siguiente paso o pulsa Editar para modificar algún valor "/>
+
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button
+                                
+                                
+                                x:Name="BtnOkCalculo"
+                                Padding="10"
+                                Margin="10"
+                                Text="ok"
+                                Clicked="BtnOkCalculo_Clicked"/>
+                            <Button
+                                x:Name="BtnReinicio"
+                                Grid.Column="1"
+                            
+                                Padding="10"
+                                Margin="10"
+                                Text="EDITAR"
+                                Clicked="BtnReinicio_Clicked"/>
+                        </Grid>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+                    x:Name="FrameWherever"
+                    IsVisible="False"
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+
+                        <BoxView Color="Gray"
+                            HeightRequest="2"
+                            HorizontalOptions="Fill"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label
+                                Text="Recomendaciones"
+                                Grid.Column="1"
+                                FontSize="25"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"/>
+                            <Label
+                                Grid.Row="1"
+                                x:Name="LblFrm1"
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+                            <Label
+                                Grid.Row="2"
+                                x:Name="LblFrm1Fosforo"
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+                            <Button
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                ImageSource="saco.png"/>
+
+                            <Label
+                                Grid.Row="3"
+                                x:Name="LblFrm1Potasio"
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+                        </Grid>
+                        
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+                    x:Name="FrameWherever2"
+                    IsVisible="False"
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+
+                        <BoxView Color="Gray"
+                            HeightRequest="2"
+                            HorizontalOptions="Fill"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            
+                            <Label
+                                Text="Recomendaciones"
+                                Grid.Column="1"
+                                FontSize="25"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"/>
+
+                            <Label
+                                Grid.Row="1"
+                                x:Name="LblFrm2"            
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+                            <Label
+                                Grid.Row="2"
+                                x:Name="LblFrm2Fosforo"
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+                            <Button
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                ImageSource="saco.png"/>
+
+                            <Label
+                                Grid.Row="3"
+                                x:Name="LblFrm2Potasio"
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+                            
+
+                        </Grid>
+                        
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+                    
+                    x:Name="FrameWherever3"
+                    IsVisible="False"
+                    BorderColor="Black"
+                    CornerRadius="5"
+                    Margin="10"
+                    Padding="10">
+                    <StackLayout>
+
+                        <BoxView Color="Gray"
+                            HeightRequest="2"
+                            HorizontalOptions="Fill"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label
+                                Text="Recomendaciones"
+                                Grid.Column="1"
+                                FontSize="25"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"/>
+                            
+                            <Label
+                                Grid.Row="1"
+                                x:Name="LblFrm3"           
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+                            <Label
+                                Grid.Row="2"
+                                x:Name="LblFrm3Fosforo"
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+
+                            <Button
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                ImageSource="saco.png"/>
+
+                            <Label
+                                Grid.Row="3"
+                                x:Name="LblFrm3Potasio"
+                                FontAttributes="Bold"
+                                FontSize="24"
+                                Text=""/>
+                        </Grid>
+                        
+                        
+                    </StackLayout>
+
+                </Frame>
+                
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="calculator.Presentation"
+             BackgroundColor="White">
+
+
+    
+    
+    <ContentPage.Content>
+        <ListView
+           x:Name="ValuesListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell
+                         x:Name="Values"
+                            >
+                        <Grid>
+                            <Label  Text="" FontAttributes="Bold"/>
+                            <Label Grid.Column="1" Text="M/O %" FontAttributes="Bold"/>
+                            <Label Grid.Column="2" Text="Fosforo" FontAttributes="Bold"/>
+                            <Label Grid.Column="3" Text="Potasio" FontAttributes="Bold"/>
+                            <Label Grid.Column="4" Text="Kg/Ha" FontAttributes="Bold"/>
+                            <Label Grid.Column="5" Text="lbs a usar  " FontAttributes="Bold"/>
+
+    
+
+
+                            <Label Grid.Row=" 1" Text="{Binding Id}" />
+                            <Label Grid.Row=" 1" Grid.Column="1" Text="{Binding ValorOrganico}"/>
+                            <Label Grid.Row=" 1" Grid.Column="2" Text="{Binding MedidaFosforo}"/>
+                            <Label Grid.Row=" 1" Grid.Column="3" Text="{Binding MedidaPotasio}"/>
+                            <Label Grid.Row=" 1" Grid.Column="4" Text="{Binding CosechaValue}" />
+                            <Label Grid.Row=" 1" Grid.Column="5" Text="{Binding MedidaSacoFertilizante}" />
+
+
+
+                            
+                            
+                            
+
+                        </Grid>
+
+                        
+
+
+                    </ViewCell> 
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="calculator.MainPage"
+             BackgroundColor="White">
+
+    <ContentPage.ToolbarItems
+        >
+        <ToolbarItem Text="New"
+                     Clicked="ToolbarItem_Clicked"
+                     IconImageSource="plant.png"/>
+
+
+    </ContentPage.ToolbarItems>
+
+    <StackLayout >
+
+
+        <Label
+            Text="Calculadora de fertilizantes"
+            FontAttributes="Bold"
+            TextColor="Black"
+            HorizontalOptions="CenterAndExpand"
+            FontSize="18"/>
+
+        <Frame
+            BackgroundColor="Transparent">
+
+        </Frame>
+        <Button
+                        WidthRequest ="80"
+                        HeightRequest ="80"
+                        CornerRadius="40"
+                        x:Name="BtnInformation"
+                        HorizontalOptions ="CenterAndExpand"
+                        ImageSource="NMbtn3.png"
+                        Clicked="BtnInformation_Clicked"/>
+
+
+        <Frame
+            BackgroundColor="Transparent">
+            
+        </Frame>
+        
+        
+        <Frame
+            BackgroundColor="Transparent">
+
+        </Frame>
+
+
+
+        <Button
+                        x:Name="BtnProcess"
+                        
+                        Grid.Row="1"
+                        WidthRequest ="80"
+                        HeightRequest ="80"
+                        CornerRadius="40"
+                         HorizontalOptions ="CenterAndExpand"
+                       ImageSource="NMbtn1.png"
+                        Clicked="BtnProcess_Clicked"/>
+
+        <Frame
+            BackgroundColor="Transparent">
+
+        </Frame>
+
+
+        <Frame
+            BackgroundColor="Transparent">
+
+        </Frame>
+
+
+        <Button
+                        
+                        x:Name="BtnPresentarInfo"
+                       
+                        WidthRequest ="80"
+                        HeightRequest ="80"
+                        CornerRadius="40"
+                         HorizontalOptions ="CenterAndExpand"
+                        ImageSource="NMbtn2.png"
+                        Clicked="BtnPresentarInfo_Clicked"
+                       />
+
+
+        
+      
+    </StackLayout>
+
+
+
+</ContentPage>
